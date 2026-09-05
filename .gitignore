@@ -1,0 +1,10 @@
+.DS_Store
+.playwright-cli/
+output/
+
+# Local working context and archived design iterations.
+AGENTS.md
+codex/
+old/
+.agents/
+.codex/
