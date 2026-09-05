@@ -4,7 +4,6 @@ output/
 
 # Local working context and archived design iterations.
 AGENTS.md
-codex/
-old/
+archive/
 .agents/
 .codex/
