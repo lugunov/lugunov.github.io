@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Why I am building Looply, the principles behind it, and what shipping a personal iPhone product is teaching me.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Looply — Building a recurring-life assistant — Andrey Lugunov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="../../index.html" aria-label="Andrey Lugunov home">Andrey Lugunov</a>
+      <div class="header-quote" aria-label="Personal motto">
+        <q>Simplicity is the ultimate sophistication.</q>
+        <cite>— author unknown</cite>
+      </div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="../../index.html">Home</a>
+        <a class="is-current" href="../index.html" aria-current="location">Projects</a>
+        <a href="../../journal/index.html">Journal</a>
+        <a href="../../my-way/index.html">My Way</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <article class="container article-page">
+      <header class="article-heading">
+        <a class="text-link" href="../index.html">← All projects</a>
+        <h1>Looply</h1>
+        <p class="article-lead">A small product built to solve a very ordinary problem: remembering the things that repeat in life.</p>
+        <a class="text-link" href="https://lugunov.github.io/looply-site/index.html">Visit Looply <span aria-hidden="true">↗</span></a>
+      </header>
+      <div class="article-body">
+        <section aria-labelledby="why">
+          <h2 id="why">Why I built it</h2>
+          <p>Some things repeat without belonging on a particular date. Replacing filters, household maintenance, recurring purchases, servicing equipment, personal routines — their timing often depends on usage and the rhythm of real life.</p>
+          <p>A calendar asks for a date. A traditional to-do app asks for a task and often a fixed repeat interval. I wanted something that could start with what actually happened, without requiring me to invent the perfect schedule first.</p>
+        </section>
+        <section aria-labelledby="idea">
+          <h2 id="idea">The idea</h2>
+          <p class="route">log → learn → predict</p>
+          <p>Record an action when it happens. Over time, those small records reveal a rhythm. Looply uses that history to help predict when the action may be needed again.</p>
+          <p>The prediction is a useful starting point, not a promise. Life changes, and the next time something happens is another opportunity to learn.</p>
+        </section>
+        <section aria-labelledby="principles">
+          <h2 id="principles">Product principles</h2>
+          <ul>
+            <li><strong>Simple first.</strong> Make the everyday action clear before adding options.</li>
+            <li><strong>Low-friction logging.</strong> Recording something should take less effort than trying to remember it.</li>
+            <li><strong>Local-first / privacy-conscious.</strong> Keep personal routines on the device wherever possible and be deliberate about data.</li>
+            <li><strong>Avoid over-engineering.</strong> Add complexity only when a real problem earns it.</li>
+            <li><strong>Build based on real usage.</strong> Let everyday experience and feedback shape what comes next.</li>
+          </ul>
+        </section>
+        <section aria-labelledby="building">
+          <h2 id="building">How I built it</h2>
+          <p>I am building Looply with Flutter for iOS, using GitHub to manage the code and changes. TestFlight and preparation for the App Store are part of turning a working app into something other people can install and use.</p>
+          <p>AI-assisted development — sometimes called vibe coding — is part of the process. I use Codex as a development partner to explore approaches, work on implementation, and help investigate problems. I still make the product decisions, review changes, and check how the app behaves in practice.</p>
+        </section>
+        <section aria-labelledby="learning">
+          <h2 id="learning">What I learned</h2>
+          <ul>
+            <li>Shipping is different from designing: the small unfinished details become real work.</li>
+            <li>App Store distribution has its own complexity, beyond writing the app.</li>
+            <li>Real user feedback changes priorities — often towards the everyday basics.</li>
+            <li>Simplicity is hard. It takes repeated decisions about what to leave out.</li>
+          </ul>
+        </section>
+        <section class="article-ending" aria-labelledby="status">
+          <h2 id="status">Current status</h2>
+          <p>Looply is being prepared for release on the App Store. The product website is the place to follow its availability and learn more about the app.</p>
+          <a class="text-link" href="https://lugunov.github.io/looply-site/index.html">Visit Looply <span aria-hidden="true">↗</span></a>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Andrey Lugunov</span><span>Built simply. On purpose.</span></div></footer>
+</body>
+</html>

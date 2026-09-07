@@ -545,6 +545,13 @@ h3 {
 
 .project-note { display: inline-block; }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+  margin-top: 1rem;
+}
+
 .my-way-layout,
 .connect-layout {
   display: grid;
