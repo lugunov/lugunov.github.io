@@ -603,6 +603,12 @@ h3 {
   font-size: 1.02rem;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+}
+
 .site-footer {
   padding: 1.8rem 0;
   border-top: 1px solid var(--border);
@@ -626,6 +632,27 @@ h3 {
 
 .article-heading > .text-link { margin-bottom: 2rem; }
 .article-heading h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
+.looply-project-intro {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.looply-project-icon {
+  width: 88px;
+  height: 88px;
+  border: 1px solid var(--border);
+  border-radius: 22%;
+}
+.looply-project-intro h1 { margin-bottom: .55rem; }
+.looply-project-intro .article-lead { margin-bottom: 1rem; }
+.looply-project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+}
 .article-meta {
   color: var(--text-muted);
   font-family: var(--font-sans);
@@ -773,6 +800,12 @@ h3 {
   .entry-date { grid-column: auto; }
 
   .projects-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .looply-project-intro {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .looply-project-icon { width: 64px; height: 64px; }
   .timeline-strip { grid-template-columns: repeat(2, 1fr); }
   .header-inner,
   .footer-inner { align-items: flex-start; }
