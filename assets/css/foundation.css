@@ -1,0 +1,144 @@
+/* Andrey UI Foundation v1.0 — shared visual tokens and accessible defaults. */
+
+:root {
+  --color-canvas: #faf9f6;
+  --color-surface: #ffffff;
+  --color-surface-soft: #eef6f2;
+  --color-ink: #17201d;
+  --color-muted: #5f6b66;
+  --color-border: #dde3df;
+  --color-primary: #0b5c49;
+  --color-primary-soft: #99f0d0;
+  --color-warm: #8a5636;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-editorial: "Source Serif 4", Georgia, serif;
+
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.75rem;
+  --text-2xl: clamp(2rem, 3vw, 2.75rem);
+  --text-3xl: clamp(2.75rem, 5vw, 4rem);
+
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-pill: 999px;
+  --layout-container: 1120px;
+  --layout-gutter: 32px;
+  --focus-ring: 0 0 0 3px rgba(11, 92, 73, .28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  letter-spacing: -.035em;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+  box-shadow: var(--focus-ring);
+}
+
+.container {
+  width: min(calc(100% - var(--layout-gutter)), var(--layout-container));
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 1rem;
+  padding: .65rem .9rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(.75rem);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --layout-gutter: 24px;
+  }
+
+  body {
+    font-size: 1.0625rem;
+  }
+}
