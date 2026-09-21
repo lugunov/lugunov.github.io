@@ -2,6 +2,9 @@
 
 A small static personal website built with semantic HTML, CSS and vanilla JavaScript. There is no framework, package installation or build step.
 
+The shared typography, colour, spacing and accessibility rules are documented in
+[`DESIGN_SYSTEM.md`](DESIGN_SYSTEM.md).
+
 ## Local preview
 
 From the repository root:
