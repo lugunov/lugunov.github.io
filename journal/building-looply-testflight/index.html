@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How a recurring salt refill turned into Looply: a simple, private app for recording repeating events and predicting what might happen next.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Building Looply: From a Small Annoyance to Something I Actually Use — Andrey Lugunov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/foundation.css">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="../../index.html" aria-label="Andrey Lugunov home">Andrey Lugunov</a>
+      <div class="header-quote" aria-label="Personal motto">
+        <q>Simplicity is the ultimate sophistication.</q>
+        <cite>— author unknown</cite>
+      </div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../../projects/index.html">Projects</a>
+        <a class="is-current" href="../index.html" aria-current="page">Journal</a>
+        <a href="../../my-way/index.html">My Way</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <article class="container article-page">
+      <header class="article-heading">
+        <a class="text-link" href="../index.html">← Journal</a>
+        <p class="article-meta">EN · PROJECT · LOOPLY · <time datetime="2026-09-21">21 September 2026</time></p>
+        <h1>Building Looply: From a Small Annoyance to Something I Actually Use</h1>
+        <p class="article-lead">It started with salt. Now it is a small personal logbook for the repetitive parts of life.</p>
+      </header>
+      <div class="article-body">
+        <p>Looply started with salt.</p>
+        <p>Not exactly the most exciting origin story for a mobile app, I know.</p>
+        <p>We have a water softener at home, and every so often I need to refill it with salt. The problem is that “every so often” isn't a particularly useful reminder interval.</p>
+        <p>Sometimes the salt lasts 20 days. Sometimes 18. Sometimes less.</p>
+        <p>I tried normal recurring reminders, but they were always slightly wrong. Either the reminder appeared when there was still plenty of salt left, or I remembered about it after it had already run out.</p>
+        <p>And at some point I had a simple thought:</p>
+        <blockquote><p><strong>Why should I tell the app when something will happen again?</strong></p></blockquote>
+        <p>Why not just tell it when something <strong>did</strong> happen?</p>
+        <p>First refill.</p>
+        <p>Second refill.</p>
+        <p>Now there is an interval.</p>
+        <p>After the third refill, there is more history.</p>
+        <p>And gradually the app can estimate when the next one is likely to happen.</p>
+        <p>That was the original idea behind Looply.</p>
+
+        <h2>Then I started finding more things to put into it</h2>
+        <p>Once I had a working version on my phone, something interesting happened.</p>
+        <p>I started noticing possible Looply use cases everywhere.</p>
+        <p>Water filters.</p>
+        <p>Household supplies.</p>
+        <p>Maintenance.</p>
+        <p>Things I replace.</p>
+        <p>Things I clean.</p>
+        <p>Things I check.</p>
+        <p>Things I buy again and again.</p>
+        <p>Yes, even toilet paper.</p>
+        <p>The basic pattern is incredibly common:</p>
+        <blockquote><p>Something happens repeatedly, but not precisely enough to justify a calendar event.</p></blockquote>
+        <p>And this is where Looply started becoming useful to me personally.</p>
+        <p>I don't really need another calendar.</p>
+        <p>I don't need another giant task management system.</p>
+        <p>I just want to quickly record:</p>
+        <blockquote><p><strong>“I did this today.”</strong></p></blockquote>
+        <p>And let the history take care of the rest.</p>
+
+        <h2>The Events screen unexpectedly became one of my favourite parts</h2>
+        <p>Originally, I was mostly interested in prediction.</p>
+        <p>Now I find myself opening <strong>Events</strong> almost as often.</p>
+        <p>Maybe that's because I'm slightly obsessive about data and statistics. 🙂</p>
+        <p>Events gives me a simple historical timeline of what I actually did.</p>
+        <p>When did I replace that filter?</p>
+        <p>When did I refill the salt?</p>
+        <p>When was the last time I did some maintenance?</p>
+        <p>Instead of trying to remember, I can just look.</p>
+        <p>And after you have been recording something for a while, that little history becomes surprisingly useful.</p>
+        <p>It is almost like a tiny personal logbook for the boring repetitive parts of life.</p>
+        <p>And apparently I like logbooks more than I realised.</p>
+
+        <h2>The nice thing is that Looply doesn't really care what you're tracking</h2>
+        <p>That is probably what I like most about the idea now.</p>
+        <p>Looply doesn't need to understand whether an event is about a water softener, a household item, maintenance, a hobby or something completely different.</p>
+        <p>It only understands:</p>
+        <blockquote><p><strong>it happened.</strong></p></blockquote>
+        <p>And then it happened again.</p>
+        <p>From there, history and intervals start becoming useful.</p>
+        <p>The more I use it myself, the more I realise that the potential use cases are much broader than the original idea.</p>
+        <p>And I deliberately don't want to turn it into a huge application with dozens of specialised features.</p>
+        <p>My original principle was:</p>
+        <blockquote><p><strong>Make it simple now. There will always be time to make it complicated later.</strong></p></blockquote>
+        <p>Looply is intentionally simple.</p>
+        <p>No cloud.</p>
+        <p>No subscription.</p>
+        <p>Your data stays locally on your phone.</p>
+        <p>I will probably add data export/import and improve things based on real feedback, but I want to keep the basic idea intact:</p>
+        <p>Record what happened.</p>
+        <p>See your history.</p>
+        <p>Let Looply estimate what might happen next.</p>
+        <p>That's it.</p>
+        <p>It started because I kept running out of salt.</p>
+        <p>Now I'm mostly curious to see what else people will use it for.</p>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Andrey Lugunov</span><span>Built simply. On purpose.</span></div></footer>
+</body>
+</html>
