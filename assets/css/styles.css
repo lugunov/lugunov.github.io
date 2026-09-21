@@ -106,7 +106,7 @@ h1,
 h2,
 h3 {
   margin-top: 0;
-  color: var(--navy);
+  color: #000;
   line-height: 1.07;
   letter-spacing: -.035em;
 }
@@ -117,7 +117,7 @@ h1 {
   font-weight: 500;
 }
 
-h1 span { color: var(--accent); }
+h1 span { color: #000; }
 
 h2 {
   margin-bottom: 1rem;
