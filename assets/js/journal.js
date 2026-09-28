@@ -15,7 +15,8 @@
     all: "All",
     work: "Work & Ideas",
     building: "Building",
-    life: "Life"
+    life: "Life",
+    draft: "Drafts"
   };
   const validCategories = new Set(Object.keys(categoryLabels));
 
@@ -28,7 +29,7 @@
     filterButtons.forEach((button) => {
       const category = button.dataset.filter;
       const count = category === "all"
-        ? entries.length
+        ? entries.filter((entry) => entry.dataset.category !== "draft").length
         : entries.filter((entry) => entry.dataset.category === category).length;
       const countElement = button.querySelector("[data-filter-count]");
 
@@ -43,7 +44,9 @@
     let visibleCount = 0;
 
     entries.forEach((entry) => {
-      const isVisible = activeCategory === "all" || entry.dataset.category === activeCategory;
+      const isVisible = activeCategory === "all"
+        ? entry.dataset.category !== "draft"
+        : entry.dataset.category === activeCategory;
       entry.hidden = !isVisible;
       visibleCount += isVisible ? 1 : 0;
     });
