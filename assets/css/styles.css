@@ -466,6 +466,20 @@ h3 {
 
 .journal-list { border-top: 1px solid var(--navy); }
 
+.journal-more { margin-top: 1.5rem; }
+
+.journal-more summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.journal-more summary:hover { color: var(--navy); }
+
+.journal-more .journal-list { margin-top: 1.5rem; }
+
 .journal-entry {
   display: grid;
   grid-template-columns: 170px minmax(240px, 1.15fr) minmax(240px, 1fr) 120px;
